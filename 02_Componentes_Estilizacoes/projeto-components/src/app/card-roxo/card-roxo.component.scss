@@ -20,15 +20,3 @@
         font-size: 40px;
     }
 }
-
-:host ::ng-deep #primeiro .card-button-cancel {
-    background-color: darkmagenta !important;
-}
-
-:host ::ng-deep #segundo .card-button-cancel {
-    background-color: greenyellow !important;
-}
-
-:host ::ng-deep mat-slider .mdc-slider__track--active_fill {
-    border-color: yellowgreen !important;
-}

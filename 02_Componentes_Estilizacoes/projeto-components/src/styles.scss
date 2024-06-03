@@ -1,3 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 // @import "./styles/global-overrides";
+
+mat-slider.custom-slider .mdc-slider__track--active_fill {
+    border-color: beige !important;
+}
