@@ -28,3 +28,7 @@
 :host ::ng-deep #segundo .card-button-cancel {
     background-color: greenyellow !important;
 }
+
+:host ::ng-deep mat-slider .mdc-slider__track--active_fill {
+    border-color: yellowgreen !important;
+}
