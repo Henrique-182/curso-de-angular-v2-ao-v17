@@ -6,5 +6,27 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'property-binding';
+  inputText = "Texto Inicial 2"
+  inputType = "text"
+  isDisabled = false
+
+  enableInput() {
+    this.isDisabled = false;
+  }
+
+  disableInput() {
+    this.isDisabled = true;
+  }
+
+  setPasswordType() {
+    this.inputType = 'password'
+  }
+
+  setTextType() {
+    this.inputType = 'text'
+  }
+
+  logInputText() {
+    console.log(this.inputText)
+  }
 }
