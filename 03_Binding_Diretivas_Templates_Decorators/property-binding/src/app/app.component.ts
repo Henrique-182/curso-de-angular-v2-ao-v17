@@ -9,6 +9,8 @@ export class AppComponent {
   inputText = "Texto Inicial 2"
   inputType = "text"
   isDisabled = false
+  buttonTitle = "Título do botão"
+  buttonDisable = true
 
   handleInputKeyup(event: KeyboardEvent) {
     const currentText = (event.target as HTMLInputElement).value
@@ -38,5 +40,10 @@ export class AppComponent {
 
   logInputText() {
     console.log(this.inputText)
+  }
+
+  onButtonClick() {
+    this.buttonTitle = 'Título Alterado'
+    this.buttonDisable = !this.buttonDisable
   }
 }

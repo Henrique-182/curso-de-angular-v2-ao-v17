@@ -21,3 +21,10 @@
 <br>
 
 <button (click)="logInputText()">Log</button>
+
+<br><br>
+
+<button [attr.title]="buttonTitle">Atributo</button>
+<button [title]="buttonTitle">Propriedade</button>
+<button [attr.disabled]="buttonDisable ? true : null">Disabled</button>
+<button (click)="onButtonClick()">Mudar props</button>
