@@ -4,6 +4,8 @@
     [value]="inputText"
     [type]="inputType"
     [disabled]="isDisabled"
+    (keyup)="handleInputKeyup($event)"
+    (input)="handleInputEvent($event)"
 />
 
 <br>
