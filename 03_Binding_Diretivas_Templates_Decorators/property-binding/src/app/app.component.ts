@@ -17,6 +17,8 @@ export class AppComponent {
     width: '160px', 
     backgroundColor: 'grey'
   }
+  isRed = true
+  isGreen = true
 
   handleInputKeyup(event: KeyboardEvent) {
     const currentText = (event.target as HTMLInputElement).value

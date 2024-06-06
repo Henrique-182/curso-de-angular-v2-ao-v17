@@ -50,3 +50,19 @@
 <button (click)="updateStyleObj2()">Atualizar Obj 2</button>
 
 <button (click)="updateWidth()">Atualidar width</button>
+
+<br><br>
+
+<button class="green-button">Teste</button>
+
+<button [class.red-button]="isRed" (click)="isGreen = false">Vermelho</button>
+<button [class.green-button]="true" (click)="isGreen = true">Verde</button>
+
+<button [class]="'green-button'">Teste</button>
+
+<button 
+    [class]="{
+        'red-button': !isGreen,
+        'green-button': isGreen
+    }"
+>Objeto</button>
