@@ -11,6 +11,12 @@ export class AppComponent {
   isDisabled = false
   buttonTitle = "Título do botão"
   buttonDisable = true
+  widthButton1 = '110px'
+  widthButton2 = 130
+  stylesObj = {
+    width: '160px', 
+    backgroundColor: 'grey'
+  }
 
   handleInputKeyup(event: KeyboardEvent) {
     const currentText = (event.target as HTMLInputElement).value
@@ -45,5 +51,21 @@ export class AppComponent {
   onButtonClick() {
     this.buttonTitle = 'Título Alterado'
     this.buttonDisable = !this.buttonDisable
+  }
+  
+  updateStyleObj() {
+    this.stylesObj.width = '170px'
+    this.stylesObj.backgroundColor = 'lightblue'
+  }
+
+  updateStyleObj2() {
+    this.stylesObj = {
+      width: '170px',
+      backgroundColor: 'lightblue'
+    }
+  }
+
+  updateWidth() {
+    this.widthButton2 += 5
   }
 }

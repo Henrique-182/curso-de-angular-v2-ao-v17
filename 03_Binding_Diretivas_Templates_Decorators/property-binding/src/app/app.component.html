@@ -28,3 +28,25 @@
 <button [title]="buttonTitle">Propriedade</button>
 <button [attr.disabled]="buttonDisable ? true : null">Disabled</button>
 <button (click)="onButtonClick()">Mudar props</button>
+
+<br><br>
+
+<button style="width: 100px; background-color: aqua;">Botão 0</button>
+
+<button [style.width]="widthButton1" [style.background-color]="'blue'">Botão 1</button>
+
+<button [style.width.px]="widthButton2" [style.background-color]="'pink'">Botão 2</button>
+
+<button [style]="'width: 140px; background-color: brown;'">Botão 3</button>
+
+<button [style]="{ width: '150px', backgroundColor: 'orange' }">Botão 4</button>
+
+<button [style]="stylesObj">Botão 5</button>
+
+<br>
+
+<button (click)="updateStyleObj()">Atualizar Obj</button>
+
+<button (click)="updateStyleObj2()">Atualizar Obj 2</button>
+
+<button (click)="updateWidth()">Atualidar width</button>
