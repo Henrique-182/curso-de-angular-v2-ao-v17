@@ -11,4 +11,8 @@ export class CardComponent {
 
   @Input({ alias: 'planPrice', required: true })
   planPrice: number = 0
+
+  buttonClicked(value: boolean) {
+    console.log(value);
+  }
 }
