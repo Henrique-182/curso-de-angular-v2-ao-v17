@@ -6,8 +6,16 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./card.component.scss'],
 })
 export class CardComponent {
+  private _planType: string = ''
+
   @Input('planType')
-  planType: string = ''
+  set planType(value: string) {
+    this._planType = value.toUpperCase()
+  }
+
+  get planType(): string {
+    return this._planType
+  }
 
   @Input({ alias: 'planPrice', required: true })
   planPrice: number = 0

@@ -1,8 +1,15 @@
 <div class="cards-container">
   <app-card
-    planType="Simples Attr"
+    [planType]="cardPlanType"
     [planPrice]="cardPlanPrice"
   ></app-card>
 
   <app-card-roxo></app-card-roxo>
 </div>
+
+<input 
+  #meuInput
+  type="text"
+  (keyup)="handlePlanType(meuInput.value)"
+  placeholder="Digite o plano"
+>
