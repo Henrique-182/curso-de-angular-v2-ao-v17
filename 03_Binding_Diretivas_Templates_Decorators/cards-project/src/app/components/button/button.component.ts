@@ -15,6 +15,9 @@ export class ButtonComponent {
   @Output('clicked')
   butonClickedEmitt = new EventEmitter<void>()
 
+  @Input('disabled')
+  isDisabled: boolean = false
+
   onButtonClicked() {
     this.butonClickedEmitt.emit()
   }
