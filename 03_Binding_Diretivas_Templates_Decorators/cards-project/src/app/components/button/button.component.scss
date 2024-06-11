@@ -8,6 +8,11 @@
     cursor: pointer;
     width: 100%;
     border: none;
+    position: relative;
+
+    &:active {
+        bottom: -1px;
+    }
 
     &--white {
         background-color: white;

@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   
+  buttonClicked() {
+    console.log('button clicked')
+  }
 }
