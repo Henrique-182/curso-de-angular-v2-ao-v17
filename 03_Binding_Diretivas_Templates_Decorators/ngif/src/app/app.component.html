@@ -1,0 +1,29 @@
+<!-- <div 
+  style="background-color: green;"
+  *ngIf="minhaProp"
+>Div verde</div> -->
+
+<!-- <div 
+  style="background-color: green;"
+  *ngIf="minhaProp; else meuTemplate"
+>Div verde</div>
+
+<ng-template #meuTemplate>
+  <div style="background-color: red;">Div vermelha</div>
+</ng-template> -->
+
+<ng-container *ngIf="minhaProp; then meuTemplate; else meuOutroTemplate"></ng-container>
+
+<ng-template #meuTemplate>
+  <div style="background-color: red;">Div vermelha</div>
+</ng-template>
+
+<ng-template #meuOutroTemplate>
+  <div style="background-color: green;">Div verde</div>
+</ng-template>
+
+<button (click)="toggleProp()">Mudar prop</button>
+
+
+<div style="visibility: hidden;">Div hidden</div>
+<div style="display: none;">Div hidden</div>
