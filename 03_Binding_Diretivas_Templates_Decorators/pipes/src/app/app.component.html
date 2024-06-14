@@ -1,0 +1,14 @@
+<h1>{{ text | uppercase }}</h1>
+<h1>{{ person | json }}</h1>
+
+<br>
+
+<h1
+  [class]="person.status | statusClass"
+>{{ person.name }}</h1>
+<h1
+  [class]="person2.status | statusClass"
+>{{ person2.name }}</h1>
+<h1
+  [class]="person3.status | statusClass"
+>{{ person3.name }}</h1>
