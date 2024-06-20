@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { IUser } from '../../interfaces/user/user.interface';
 import { UsersList } from '../../data/users-list';
 
@@ -9,7 +9,8 @@ import { UsersList } from '../../data/users-list';
 })
 export class UsersListComponent {
 
-  usersList: IUser[] = UsersList
+  @Input({ required: true })
+  usersList: IUser[] = []
 
   displayedColumns: string[] = ['name', 'date', 'status']
 
